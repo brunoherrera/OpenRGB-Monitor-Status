@@ -55,5 +55,4 @@ To make the script automatically run when you log into Windows, you have two opt
 1. Press `Win + R`, then type:
    ```text
    shell:startup
-   
 2. Paste a shortcut to the `openRGBMonitorStatus.vbs` file into the folder that opens.
