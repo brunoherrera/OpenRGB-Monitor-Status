@@ -19,6 +19,8 @@ You will find (or must create) the following files in the same folder:
 
 > ⚠️ **All four files must reside in the same folder for everything to work properly.**
 
+![same folder](images/same%20folder.png)
+
 ## 🛠️ How to Set Up
 
 ### 1. Create Your OpenRGB Shortcuts
