@@ -28,7 +28,8 @@ Manually create two Windows shortcuts (`.lnk`) pointing to your `OpenRGB.exe`, e
 - **OpenRGB ON.lnk**
   ```text
   Target: "C:\Path\To\OpenRGB.exe" --profile ON
-
-  - **OpenRGB OFF.lnk**
+  
+- **OpenRGB OFF.lnk**
   ```text
   Target: "C:\Path\To\OpenRGB.exe" --profile OFF
+  
