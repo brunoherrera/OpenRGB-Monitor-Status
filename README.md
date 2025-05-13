@@ -31,9 +31,14 @@ Manually create two Windows shortcuts (`.lnk`) pointing to your `OpenRGB.exe`, e
   ```text
   Target: "C:\Path\To\OpenRGB.exe" --profile ON
   
+- ("ON" is the name of the profile, you can change it to whatever profile name you want to be applied when monitor is on)
+
 - **OpenRGB OFF.lnk**
   ```text
   Target: "C:\Path\To\OpenRGB.exe" --profile OFF
+
+- ("OFF" is the name of the profile, you can change it to whatever profile name you want to be applied when monitor is off)
+
   
 ### 2. Set It to Run at Startup
 
