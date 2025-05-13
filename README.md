@@ -14,8 +14,8 @@ You will find (or must create) the following files in the same folder:
 
 - `OpenRGB ON.lnk` — Shortcut to `OpenRGB.exe` that applies your **"ON"** profile (used when the monitor is **on**).
 - `OpenRGB OFF.lnk` — Shortcut to `OpenRGB.exe` that applies your **"OFF"** profile (used when the monitor is **off**).
-- `monitor-status.ps1` — PowerShell script that checks the monitor status and runs the appropriate shortcut.
-- `monitor-status.vbs` — VBScript that silently launches the PowerShell script (used **only to hide the PowerShell window**).
+- `openRGBMonitorStatus.ps1` — PowerShell script that checks the monitor status and runs the appropriate shortcut.
+- `openRGBMonitorStatus.vbs` — VBScript that silently launches the PowerShell script (used **only to hide the PowerShell window**).
 
 > ⚠️ **All four files must reside in the same folder for everything to work properly.**
 
@@ -35,3 +35,25 @@ Manually create two Windows shortcuts (`.lnk`) pointing to your `OpenRGB.exe`, e
   ```text
   Target: "C:\Path\To\OpenRGB.exe" --profile OFF
   
+### 2. Set It to Run at Startup
+
+To make the script automatically run when you log into Windows, you have two options:
+
+#### 🧩 Option A: Use Task Scheduler
+
+1. Open **Task Scheduler**.
+2. Create a **new task** (not basic).
+3. Under **Triggers**, set:
+   - **Begin the task**: At log on
+4. Under **Actions**, set:
+   - **Action**: Start a program  
+   - **Program/script**: Browse and select the `openRGBMonitorStatus.vbs` file
+5. (Optional) Under **General**, check **"Run with highest privileges"** for better reliability.
+
+#### 🚀 Option B: Use the Startup Folder
+
+1. Press `Win + R`, then type:
+   ```text
+   shell:startup
+   
+2. Paste a shortcut to the `openRGBMonitorStatus.vbs` file into the folder that opens.
